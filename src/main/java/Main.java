@@ -18,7 +18,7 @@ public class Main {
                 ) {
                     System.out.println("New connection accepted");
                     final String name = in.readLine();
-                    out.println(String.format("Hi %s, your port is %d. Are you student?", name, clientSocket.getPort()));
+                    out.println(String.format("Hi %s, your port is %d. Are you student? y/n", name, clientSocket.getPort()));
                     String message = in.readLine();
                     if (message.equals("y")){
                         out.println("Oh, are you studying java? y/n");
